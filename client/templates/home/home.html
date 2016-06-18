@@ -10,7 +10,7 @@
 		<div class="row text-center form-inline">
 	   		<div class="form-group">
                 <label for="need">I need</label>
-                <input name="need" />
+                <input name="need" id="search-box" />
                 <label for="distance">within</label>
                 <span>
                 <select class="form-control" id="distance" style="display:inline;">
@@ -28,6 +28,12 @@
 					    <option value="2">Available at a Price</option>
 					  
 					</select></span>
+
+					<select class="selectpicker">
+  <option>Mustard</option>
+  <option>Ketchup</option>
+  <option>Barbecue</option>
+</select>
 				
          
              
@@ -35,7 +41,7 @@
     </div> 
    </div>
    </div>
-
+{{> map}}
 
 
 </template>
