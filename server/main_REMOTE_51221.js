@@ -5,8 +5,6 @@ import { Meteor } from 'meteor/meteor';
 // });
 
 
-
-
 Meteor.startup(function() {
   
     Items.insert({name: 'Blueberries'});
@@ -16,4 +14,3 @@ Meteor.startup(function() {
     Items.insert({name: 'Egg eggs hello bangalore'});
   
 });
-

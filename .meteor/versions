@@ -78,6 +78,7 @@ modules@0.6.2
 modules-runtime@0.6.4
 mongo@1.1.8
 mongo-id@1.0.5
+mrt:jquery-ui@1.9.2
 npm-bcrypt@0.8.6_1
 npm-mongo@1.4.44
 oauth@1.1.11
@@ -98,6 +99,7 @@ reactive-var@1.0.10
 reload@1.1.9
 retry@1.0.8
 routepolicy@1.0.11
+sebdah:autocompletion@0.2.0
 service-configuration@1.0.10
 session@1.1.6
 sha@1.0.8
