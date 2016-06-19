@@ -10,7 +10,7 @@ The Webapp is based on Google Maps. People can list the things they have in exce
 The inspiration was to help people in the situations like when they need something very urgently like a laptop charger or 
 mobile charger or may be extra notebooks etc.
 
-The search radius is limited to 15km such as to keep the idea of getting the required things now. The platform is fully adaptable to any requirement like realstate.
+The search radius is limited to 15km such as to keep the idea of getting the required things now. The platform is fully adaptable to any requirement like real estate, food,or other services.
 
 The Code used Google Maps geolocator to get the users location and used Geographical formula to calculate the distance between the listed item and his/her present location. This bypasses the need for using GMaps Distance Matrix APIs which has limitations in free plan.
 
