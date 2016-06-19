@@ -1,19 +1,22 @@
 <template name="home">
+<title>Find Me this!</title>
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="jumbotron vertical-center"><h1 class="text-center"><strong>Find Me!</strong></h1></div>
+			<div class="jumbotron vertical-center"><h1 class="text-center"><strong>Find Me This!</strong></h1></div>
 		</div>
 
 	</div>
+	<h2 class="text-muted text-center">FInd the things you need instantly near you!</h2>
 	<div class="col-md-12 " style="display:inline;">
 		<div class="row text-center form-inline">
+		 <form class="form-inline ">
 	   		<div class="form-group">
-                <label for="need">I need</label>
+                <label for="need">I need &nbsp;</label>
 
-                <input name="need" placeholder="what" id="searchBox" />
+                <input name="need" placeholder="&nbsp;what" id="searchBox" />
 
-                <label for="distance">within</label>
+                <label for="distance">&nbsp;within&nbsp;</label>
                 <span>
                 <select class="form-control" id="distance" style="display:inline;">
 					 
@@ -21,29 +24,70 @@
 					    <option value="10">10 Km</option>
 					    <option value="15">15 Km</option>
 					  
-					</select> Radius</span>
- which is  <span>
+					</select></span><label> &nbsp; Radius
+ which is  &nbsp;</label><span>
                 <select class="form-control" id="type" style="display:inline;">
 					 
-					    <option value="0">Avaibale for Free</option>
+					    <option value="0">Available for Free</option>
 					    <option value="1">Available for Sharing</option>
 					    <option value="2">Available at a Price</option>
 					  
-					</select></span>
+					</select></span> <span id="OnlyForPrice" style="display:none;">and cost less than<input class="form-control" name="" placeholder="Specify Price" id="price"/></span>
 
-					<select class="selectpicker">
-  <option>Mustard</option>
-  <option>Ketchup</option>
-  <option>Barbecue</option>
-</select>
+	
 				
          
              
         </div>
+
+        &nbsp; <button type="submit" class="btn-primary go">Go</button>
+        </form>
     </div> 
    </div>
    </div>
 {{> map}}
 
+{{> showData}}
+</template>
 
+<!-- <template name="showData">
+	{{#each item}}
+		
+			<li> {{name}} ------ {{description}} </li>
+		
+	{{/each}}
+
+{{ showDistance}}
+</template>
+ -->
+
+
+ <template name="showData">
+ 
+<hr>
+ <div class="container" id="list1" style="display:none;">
+ <div class="row">
+ {{#if currentUser}}
+  <table class="table table-striped ">
+    <tr >
+      <th>Item</th>
+      <th>Description</th>
+      <th>address</th>
+      <th>price</th>
+
+    </tr>
+    {{#each showDataItems}}
+      <tr >
+        <td>{{name}}</td>
+        <td>{{description}}</td>
+        <td>{{address}}</td>
+        <td>{{price}}</td>
+      </tr>
+    {{/each}}
+  </table>
+  {{else}}
+  <h2 class="text-muted text-center">Please Sign in to Use the Feature and share your things</h2>
+  {{/if}}
+  </div>
+  </div>
 </template>

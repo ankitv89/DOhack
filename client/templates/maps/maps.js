@@ -47,7 +47,10 @@ if (Meteor.isClient) {
       // Initialize the map once we have the latLng.
       if (GoogleMaps.loaded() && latLng) {
         console.log(latLng.lat);
+        Session.set('latitude',latLng.lat);
           console.log(latLng.lng);
+          console.log(Session.get('latitude'));
+          Session.set('longitude', latLng.lng);
         return {
           center: new google.maps.LatLng(latLng.lat, latLng.lng),
 

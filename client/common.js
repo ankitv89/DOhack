@@ -1,7 +1,3 @@
-
-
-
-
-
+Meteor.subscribe('itemslist');
 
 

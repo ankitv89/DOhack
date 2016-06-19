@@ -1,0 +1,27 @@
+<template name="myitems">
+	<div class="container" id="list2">
+ <div class="row">
+ <!-- {{#if currentUser}} -->
+  <table class="table table-striped ">
+    <tr >
+      <th>Item</th>
+      <th>Description</th>
+      <th>address</th>
+      <th>price</th>
+
+    </tr>
+    {{#each showMyItems}}
+      <tr >
+        <td>{{name}}</td>
+        <td>{{description}}</td>
+        <td>{{address}}</td>
+        <td>{{price}}</td>
+      </tr>
+    {{/each}}
+  </table>
+  <!-- {{else}}
+  <h2 class="text-muted text-center">Please Sign in to Use the Feature and share your things</h2> -->
+  <!-- {{/if}} -->
+  </div>
+  </div>
+</template>
