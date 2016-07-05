@@ -1,5 +1,5 @@
 #Find Me This!
-
+##This project is no longer maintained!
 
 A Google Maps based listing web app to help people share resources. WONT WORK IN CHROME AS IT NEEDS HTTPS FOR GMAPS.
 
