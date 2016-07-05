@@ -3,7 +3,7 @@ if (Meteor.isClient) {
 
   Meteor.startup(function() {
     
-    GoogleMaps.load({v: '3', key: 'AIzaSyB-zaUJ4PvVr_29YUcX9IeFKRs6x72g83M'}); 
+    GoogleMaps.load({v: '3', key: 'GOOGLEMAPS_API_KEY_HERE'}); 
   });
 
   Template.map.onCreated(function() {
