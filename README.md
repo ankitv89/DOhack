@@ -18,8 +18,8 @@ The Code used Google Maps geolocator to get the users location and used Geograph
 MeteorJS 1.3.3
 
 ##Directions for Use:
-1) Visit http://139.59.12.245/ 
-2) Log in using either password, facebook. (Google won't work as redirect URI as IP is not allowed)
+1) Run the App
+2) Log in using password
 3) Click Submit and fill in the form to list the items or search the home page to find the items. The phone number and address is listed out for the available items.
 
 ##Installations Instructions:
